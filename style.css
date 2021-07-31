@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {  
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -33,30 +33,19 @@ body {
   list-style: none;
 }
 .navlist li a {
-  font-size: 24px;
+  font-size: 22px;
   text-decoration: none;
   padding: 10px 24px;
   color: #e7eff8;
   transition: all 0.3s;
 }
 .navlist li a:hover {
-  text-decoration: underline;
   font-style: italic;
   color: #aec70c;
 }
-
-/* Nav Branding */
 .brand {
-  display: flex;
-}
-.brand h1 {
-  font-family: "Noto Serif", serif;
-  padding: 10px 24px;
+  padding-right: 1.6em;
   cursor: pointer;
-  color: #e7eff8;
-}
-.brand h1 span {
-  color: #aec70c;
 }
 
 /* Navigation Responsive */
@@ -109,7 +98,6 @@ body {
   align-items: center;
 }
 .homeIndex {
-  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -122,13 +110,15 @@ body {
   font-size: 64px;
 }
 .homeIndex p {
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   color: #4884ad;
 }
 .homeIndex button {
+  font-family: "Noto Serif", serif;
   padding: 16px 24px;
   color: #e7eff8;
-  background: #aec70c;
+  background: #6d9d38;
   font-size: 24px;
   font-weight: 600;
   border: none;
@@ -137,7 +127,7 @@ body {
   transition: 0.2s;
 }
 .homeIndex button:hover {
-  background-color: #6d9d38;
+  background-color: #aec70c;
   cursor: pointer;
 }
 .homeLogo {
@@ -215,22 +205,22 @@ body {
   color: #07739e;
 }
 .aboutContent h2 {
-    font-size: 24px;
-    color: #4884ad;
-    margin-top: 5vh;
+  font-size: 24px;
+  color: #4884ad;
+  margin-top: 5vh;
 }
 .aboutContent h2 a {
   display: none;
 }
 .aboutContent p {
-    font-size: 18px;
-    color: #4884ad;
+  font-size: 18px;
+  color: #4884ad;
 }
 .aboutContent p a {
-    font-family: 'Noto Serif', serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: #4884ad;
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4884ad;
 }
 
 /* About container responsive design */
@@ -260,7 +250,7 @@ body {
 }
 @media (max-width: 600px) {
   .aboutContent h2 a {
-    font-family: 'Noto Serif', serif;
+    font-family: "Noto Serif", serif;
     display: block;
     color: #07739e;
     font-weight: 700;
@@ -279,7 +269,7 @@ body {
   .aboutContent {
     width: 60%;
     text-align: center;
-  } 
+  }
 }
 
 /* why choose container styling */
@@ -291,25 +281,27 @@ body {
   align-items: center;
 }
 .whychoosecontainer h1 {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-size: 48px;
   color: #07739e;
   text-align: center;
 }
 .choosecontent {
   width: 50%;
+  margin-top: 10vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
 }
 .choosecontent h2 {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-size: 24px;
   color: #07739e;
 }
 .choosecontent p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5vh;
   font-size: 18px;
   color: #4884ad;
 }
@@ -348,15 +340,15 @@ body {
     font-size: 14px;
   }
 }
-@media (max-width:480px) {
+@media (max-width: 480px) {
   .choosecontent {
     grid-template-columns: inherit;
   }
   .element1 {
-    order:2;
+    order: 2;
   }
   .element2 {
-    order:1;
+    order: 1;
   }
 }
 
@@ -366,13 +358,13 @@ body {
   padding-top: 10vh;
 }
 .courses h3 {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-size: 48px;
   color: #07739e;
   margin: 0;
 }
 .courses p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   color: #4884ad;
   margin: 0;
@@ -387,15 +379,15 @@ body {
 /* Cards */
 .cards {
   width: 240px;
-  background: #4884AD;
+  background: #4884ad;
   border-radius: 10px;
 }
 .cards img {
   width: 100%;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
 }
 .cards h3 {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-size: 18px;
   font-weight: 700;
   color: #aec70c;
@@ -404,25 +396,25 @@ body {
   margin: 0;
 }
 .cards p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: #E7EFF8;
+  color: #e7eff8;
   text-align: center;
   padding: 0.7em;
   margin: 0;
 }
 .cards h4 {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-size: 32px;
   font-weight: 400;
   color: #aec70c;
   text-align: center;
-  padding:0 1em;
+  padding: 0 1em;
   padding-bottom: 0.6em;
   margin: 0;
 }
 .cards h4 span {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #e7eff8;
   font-size: 10px;
   font-weight: 400;
@@ -433,7 +425,7 @@ body {
   .cards-container {
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 6vh;
   }
 }
 @media (max-width: 480px) {
@@ -443,14 +435,15 @@ body {
   .courses p {
     font-size: 18px;
   }
-} 
+}
 /* Offers styling */
 .offers {
   margin-top: 10vh;
   margin-bottom: 10vh;
   width: 100%;
   height: 650px;
-  background: linear-gradient(#4885ad80,#4884AD80), url(./images/homepage01.jpg);
+  background: linear-gradient(#4885ad80, #4884ad80),
+    url(./images/homepage01.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -459,25 +452,29 @@ body {
   text-align: center;
 }
 .offers h3 {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-size: 72px;
-  color: #aec70c;
+  color: #6d9d38;
 }
 .offers p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 28px;
   color: #e7eff8;
 }
 .offers button {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-size: 36px;
   margin-top: 5vh;
   padding: 14px 26px;
   color: #e7eff8;
-  background: #aec70c;
+  background: #6d9d38;
   border: none;
   cursor: pointer;
   border-radius: 12px;
+  transition: 0.3s;
+}
+.offers button:hover {
+  background: #aec70c;
 }
 @media (max-width: 768px) {
   .offers h3 {
@@ -498,11 +495,208 @@ body {
     font-size: 26px;
   }
 }
+
 /* Testimonials */
+.testimonials h3 {
+  font-family: "Noto Serif", serif;
+  margin-top: 10vh;
+  padding: 1em;
+  font-size: 48px;
+  color: #07739e;
+  text-align: center;
+}
+.testimonial-content h4 {
+  font-family: "Noto Serif", serif;
+  font-size: 36px;
+  color: #07739e;
+}
+.testimonial-content p {
+  font-family: "Poppins", sans-serif;
+  margin-top: 4vh;
+  font-size: 18px;
+  color: #4884ad;
+  text-align: justify;
+}
+.angelina {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5vh;
+}
+.clientImg {
+  width: 280px;
+}
+.clientImg img {
+  width: 100%;
+}
+.clientcontent {
+  width: 40%;
+}
+.john {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin-top: 8vh;
+}
+.julia {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8vh;
+}
+@media (max-width: 768px) {
+  .clientcontent {
+    width: 50%;
+    padding: 0 20px;
+  }
+  .testimonial-content h4 {
+    font-size: 30px;
+  }
+  .testimonial-content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .testimonials h3 {
+    font-size: 34px;
+  }
+  .testimonial-content h4 {
+    margin-top: 5vh;
+  }
+  .angelina,
+  .john,
+  .julia {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .clientcontent {
+    width: 90%;
+  }
+}
 
-
-
-
-
+/* Footer styles */
+.footer {
+  margin-top: 10vh;
+  min-height: 40vh;
+  background: #4884ad;
+}
+.footer_details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5vh 0;
+}
+.footer_logo {
+  width: 8vw;
+}
+.footer img {
+  width: 100%;
+}
+.footer_desc {
+  width: 70%;
+}
+.footer_text {
+  margin-bottom: 4vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #e7eff8;
+  text-align: justify;
+  text-align-last: center;
+}
+.footer_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.call_to_action button {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e7eff8;
+  background: #6d9d38;
+  padding: 14px 26px;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.call_to_action button:hover {
+  background: #aec70c;
+  cursor: pointer;
+}
+.footer_data p:nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #aec70c;
+}
+.footer_data p:nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e7eff8;
+}
+.social_icons i {
+  margin-right: 4vh;
+  font-size: 1.1em;
+  color: #e7eff8;
+  cursor: pointer;
+}
+.footer hr {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  border: none;
+  border-top: 1px solid #e7eff8;
+}
+.footer_rights p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 4vh 0;
+  color: #e7eff8;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .footer_text {
+    font-size: 16px;
+  }
+  .call_to_action button {
+    font-size: 16px;
+  }
+  .footer_data p {
+    font-size: 12px;
+  }
+  .social_media i {
+    margin-right: 1vh;
+  }
+}
+@media (max-width: 768px) {
+  .footer_details {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer_logo {
+    display: none;
+  }
+  .footer_desc {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .footer_data {
+    flex-direction: column;
+  }
+  .footer_data p:first-child {
+    margin-right: 2vh;
+  }
+  .contact, .resources, .social_media {
+    display: flex;
+    margin-top: 4vh;
+  }
+  .footer_rights p {
+    font-size: 14px;
+  }
+}
 /* font-family: 'Noto Serif', serif;
 font-family: 'Poppins', sans-serif; */
