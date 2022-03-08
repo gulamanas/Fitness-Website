@@ -375,6 +375,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 /* Cards */
 .cards {
@@ -442,8 +443,7 @@ body {
   margin-bottom: 10vh;
   width: 100%;
   height: 650px;
-  background: linear-gradient(#4885ad80, #4884ad80),
-    url(./images/homepage01.jpg);
+  background: linear-gradient(#4885ad80, #4884ad80), url(./images/homepage01.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -690,7 +690,9 @@ body {
   .footer_data p:first-child {
     margin-right: 2vh;
   }
-  .contact, .resources, .social_media {
+  .contact,
+  .resources,
+  .social_media {
     display: flex;
     margin-top: 4vh;
   }
