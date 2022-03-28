@@ -26,23 +26,33 @@ const months = [
 ];
 const d = new Date();
 
-const monthsInNumber = months[d.getMonth()];
-monthValues.innerHTML = monthsInNumber.toUpperCase();
+monthValues.innerHTML = months[d.getMonth()].toUpperCase();
 month.innerHTML = d.getMonth() + 1;
 
 // Get date
 function lastDate() {
   let newDate = document.getElementById("date");
-  if (monthsInNumber == months[1]) {
-    newDate.innerHTML = 28;
+  if (d.getMonth() == 1) {
+    if (
+      // leap year
+      (0 == d.getFullYear() % 4 && 0 != d.getFullYear() % 100) ||
+      0 == d.getFullYear() % 400
+    ) {
+      newDate.innerHTML = 29;
+    } else {
+      // not a leap year
+      newDate.innerHTML = 28;
+    }
   } else if (
-    monthsInNumber == months[3] ||
-    months[5] ||
-    months[8] ||
-    months[10]
+    // months has 30 days
+    d.getMonth() == 3 ||
+    d.getMonth() == 5 ||
+    d.getMonth() == 8 ||
+    d.getMonth() == 10
   ) {
     newDate.innerHTML = 30;
   } else {
+    // months has 31 days
     newDate.innerHTML = 31;
   }
 }
