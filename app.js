@@ -86,7 +86,7 @@ for (let i = 0; i < res.length; i++) {
 
 // close popup function
 function closePopup() {
-  popup.removeAttribute("style", "opacity: 0;pointer-events: all;");
+  popup.removeAttribute("style", "opacity: 0;pointer-events: none;");
   formContainer.style.top = "-100px";
 }
 

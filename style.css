@@ -508,7 +508,6 @@ body {
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
-  /* visibility: hidden; */
   opacity: 0;
   pointer-events: none;
 }
@@ -517,7 +516,8 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 100%;
+  max-width: 400px;
   background: #07739e;
   padding: 2rem;
   top: -100px;
@@ -534,7 +534,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 100%;
   gap: 10px;
 }
 input,
@@ -569,7 +569,6 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .form_container {
-    width: 400px;
     padding: 3rem;
   }
   .fa-times-circle {
@@ -577,16 +576,10 @@ textarea {
     right: 15px;
     font-size: 1.4rem;
   }
-  .form {
-    width: 400px;
-  }
 }
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 768px) {
   .form_container {
-    width: 500px;
-  }
-  .form {
-    width: 500px;
+    max-width: 500px;
   }
 }
 
