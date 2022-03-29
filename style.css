@@ -508,6 +508,8 @@ body {
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  pointer-events: none;
 }
 .form_container {
   display: flex;
@@ -517,6 +519,8 @@ body {
   width: 350px;
   background: #07739e;
   padding: 2rem;
+  top: -100px;
+  transition: all 0.2s ease-out;
 }
 .fa-times-circle {
   position: absolute;

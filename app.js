@@ -62,6 +62,30 @@ lastDate();
 const year = document.getElementById("year");
 year.innerHTML = d.getFullYear();
 
+// open popup
+function openPopup() {
+  let popup = document.querySelector(".popup");
+  // popup.style.visibility = "visible";
+  popup.setAttribute("style", "visibility: visible;pointer-events: all;");
+  document.querySelector(".form_container").style.top = "0";
+}
+
+// open popup with three different buttons
+document.querySelector(".open_popup").addEventListener("click", openPopup);
+document.querySelector(".open_popup_two").addEventListener("click", openPopup);
+document
+  .querySelector(".open_popup_three")
+  .addEventListener("click", openPopup);
+
+// form container animation
+
+// close popup
+document.querySelector(".fa-times-circle").addEventListener("click", () => {
+  let popup = document.querySelector(".popup");
+  popup.removeAttribute("style", "visibility: hidden;pointer-events: none;");
+  document.querySelector(".form_container").style.top = "-100px";
+});
+
 // AOS Animation
 AOS.init({
   offset: 500,
