@@ -18,7 +18,7 @@ body {
   width: 100%;
   position: fixed;
   z-index: 99;
-  height: 10vh;
+  height: 8vh;
   background: #07739e;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -33,7 +33,7 @@ body {
   list-style: none;
 }
 .navlist li a {
-  font-size: 22px;
+  font-size: 16px;
   text-decoration: none;
   padding: 10px 24px;
   color: #e7eff8;
@@ -52,11 +52,11 @@ body {
 @media (max-width: 768px) {
   .navlist {
     position: fixed;
-    top: 10vh;
+    top: 8vh;
     left: 0;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 92vh;
     width: 60%;
     background: #07739e;
     transform: translateX(-500px);
@@ -507,8 +507,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.4);
-  visibility: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  /* visibility: hidden; */
+  opacity: 0;
   pointer-events: none;
 }
 .form_container {

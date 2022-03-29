@@ -62,11 +62,11 @@ lastDate();
 const year = document.getElementById("year");
 year.innerHTML = d.getFullYear();
 
+let popup = document.querySelector(".popup");
 // open popup
 function openPopup() {
-  let popup = document.querySelector(".popup");
   // popup.style.visibility = "visible";
-  popup.setAttribute("style", "visibility: visible;pointer-events: all;");
+  popup.setAttribute("style", "opacity: 1;pointer-events: all;");
   document.querySelector(".form_container").style.top = "0";
 }
 
@@ -77,13 +77,22 @@ document
   .querySelector(".open_popup_three")
   .addEventListener("click", openPopup);
 
-// form container animation
+// close popup function
+function closePopup() {
+  popup.removeAttribute("style", "opacity: 0;pointer-events: all;");
+  document.querySelector(".form_container").style.top = "-100px";
+}
 
 // close popup
 document.querySelector(".fa-times-circle").addEventListener("click", () => {
-  let popup = document.querySelector(".popup");
-  popup.removeAttribute("style", "visibility: hidden;pointer-events: none;");
-  document.querySelector(".form_container").style.top = "-100px";
+  closePopup();
+});
+
+// Close popup while clicking outside
+window.addEventListener("click", (e) => {
+  if (e.target == popup) {
+    closePopup();
+  }
 });
 
 // AOS Animation
