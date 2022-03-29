@@ -63,30 +63,37 @@ const year = document.getElementById("year");
 year.innerHTML = d.getFullYear();
 
 let popup = document.querySelector(".popup");
+let formContainer = document.querySelector(".form_container");
 // open popup
 function openPopup() {
   // popup.style.visibility = "visible";
   popup.setAttribute("style", "opacity: 1;pointer-events: all;");
-  document.querySelector(".form_container").style.top = "0";
+  formContainer.style.top = "0";
 }
 
 // open popup with three different buttons
-document.querySelector(".open_popup").addEventListener("click", openPopup);
-document.querySelector(".open_popup_two").addEventListener("click", openPopup);
-document
-  .querySelector(".open_popup_three")
-  .addEventListener("click", openPopup);
+let res = document.querySelectorAll(
+  ".open_popup, .open_popup_two, .open_popup_three"
+);
+for (let i = 0; i < res.length; i++) {
+  res[i].addEventListener("click", openPopup);
+}
+// document.querySelector(".open_popup").addEventListener("click", openPopup);
+// document.querySelector(".open_popup_two").addEventListener("click", openPopup);
+// document
+//   .querySelector(".open_popup_three")
+//   .addEventListener("click", openPopup);
 
 // close popup function
 function closePopup() {
   popup.removeAttribute("style", "opacity: 0;pointer-events: all;");
-  document.querySelector(".form_container").style.top = "-100px";
+  formContainer.style.top = "-100px";
 }
 
 // close popup
-document.querySelector(".fa-times-circle").addEventListener("click", () => {
-  closePopup();
-});
+document
+  .querySelector(".fa-times-circle")
+  .addEventListener("click", closePopup);
 
 // Close popup while clicking outside
 window.addEventListener("click", (e) => {
